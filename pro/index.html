@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Livraria</title>
+</head>
+<body>
+    <div>
+        <ul id="cabecalho">
+            <li class="titulo">Livraria <span>Borges</span> </li> <!-- TEXTO flutuante-->
+            <li>Promoções</li> <!-- link BUSCA LIVROS EM PROMOCAO SEGUNDO BUSCA SQL-->
+            <li>Busca</li> <!-- POP UP ABRE CAMPO E DE CONSULTA SQL-->
+            <li><button class="button-login">Login</button></li> <!-- REVELA/ESCONDE DIV LOGIN -->
+        </ul>
+    <!-- tela login -->
+    <div id="login">
+        <h2>LOGIN</h2>
+        <form action="" method="post">
+            <input type="text" placeholder="Nome">
+            <br/>
+            <input type="password" placeholder="Senha">
+            <br>
+            <button>Entrar</button>
+            <button class="button-login">Fechar</button><!-- fecha tela -->
+            <div id="cadastro">
+                <p>Não tem conta ainda? Faça seu cadastro e aproveite nossas vantagens e promoções!</p>
+                <button><a href="cadastro.php">Quero me cadastrar</a></button>
+            </div>
+        </form>
+    </div>
+    <!-- fim tela login -->
+
+    </div>
+    
+    <div>
+        <h1>Livraria<br/> <span>Borges</span></h1>
+    </div>
+    
+    <div>
+        <h2>Catálogo</h2>
+    </div>
+
+    <div>
+        <h2>Área capas</h2>
+    </div>
+<!-- scripts -->
+<script src="js/jquery.js"></script>
+
+<!-- behavior -->
+    <!-- toggle login form -->
+    <script>
+        $(document).ready(function(){
+            $(".button-login").click(function(){
+            $("#login").toggle("slow");
+        });
+        });
+        
+    </script>
+</body>
+</html>
